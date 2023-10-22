@@ -21,7 +21,7 @@ our $VERSION = '0.01';
 
     use Range::Validator;
 
-    my @range = Range::Validator->validate(0..3);		# a valid range
+    my @range = Range::Validator->validate(0..3);	# a valid range
     my @range = Range::Validator->validate(0..3,2); 	# an overlapping range
     my @range = Range::Validator->validate('1,3,7'); 	# a valid range passed as a string 
     my @range = Range::Validator->validate('1,XXX,3'); 	# a valid range passed as a string 
