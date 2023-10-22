@@ -6,7 +6,7 @@ use warnings;
 
 =head1 NAME
 
-Range::Validator - The great new Range::Validator!
+Range::Validator - A simple method to verify array and list ranges
 
 =head1 VERSION
 
@@ -19,34 +19,17 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
-
     use Range::Validator;
 
-    my $foo = Range::Validator->new();
+    my @range = Range::Validator->validate(0..3);		# a valid range
+    my @range = Range::Validator->validate(0..3,2); 	# an overlapping range
+    my @range = Range::Validator->validate('1,3,7'); 	# a valid range passed as a string 
+    my @range = Range::Validator->validate('1,XXX,3'); 	# a valid range passed as a string 
     ...
 
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
-
-=head1 SUBROUTINES/METHODS
-
-=head2 function1
-
 =cut
 
-sub function1 {
-}
-
-=head2 function2
-
-=cut
-
-sub function2 {
+sub validate(){
 }
 
 =head1 AUTHOR
