@@ -4,6 +4,16 @@ use 5.006;
 use strict;
 use warnings;
 
+our $VERSION = '0.01';
+
+sub validate(){
+}
+
+
+1; # End of Range::Validator
+
+ __DATA__
+
 =head1 NAME
 
 Range::Validator - A simple method to verify array and list ranges
@@ -13,9 +23,6 @@ Range::Validator - A simple method to verify array and list ranges
 Version 0.01
 
 =cut
-
-our $VERSION = '0.01';
-
 
 =head1 SYNOPSIS
 
@@ -29,9 +36,6 @@ our $VERSION = '0.01';
 
 =cut
 
-sub validate(){
-}
-
 =head1 AUTHOR
 
 Surfista, C<< <whatever at example.com> >>
@@ -43,7 +47,7 @@ the web interface at L<https://rt.cpan.org/NoAuth/ReportBug.html?Queue=Range-Val
 automatically be notified of progress on your bug as I make changes.
 
 
-
+ 
 
 =head1 SUPPORT
 
@@ -82,7 +86,4 @@ This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
-
 =cut
-
-1; # End of Range::Validator
